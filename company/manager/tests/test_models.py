@@ -5,7 +5,7 @@ from .factories import CompanyFactory
 
 
 class CompanyTestCase(TestCase):
-    """ Test for string reper"""
     def test_str(self):
+        """ Test for string reper"""
         company = CompanyFactory()
         self.assertEqual(str(company), company.name)
